@@ -7,8 +7,9 @@
   position: fixed; /* Stays fixed on the left */
   top: 0;
   left: 0;
-  background-color: white;
-  border-right: 1px solid #dbdbdb;
+  background-color: var(--dark);
+  border-right: 3px solid var(--primary);
+  box-shadow: 0 1px 10px var(--primary);
   padding: 12px 12px;
   display: flex;
   flex-direction: column;
@@ -37,7 +38,6 @@
   }
 }
 
-
 .sidebar-logo {
   padding: 25px 12px 25px 12px; /* Top padding for logo */
   margin-bottom: 20px;
@@ -46,7 +46,7 @@
 
 .sidebar-logo .logo-link {
   text-decoration: none;
-  color: #262626;
+  color: var(--secondary);
   font-size: 1.4em;
   font-weight: bold;
   display: flex;
@@ -83,8 +83,8 @@
   display: flex;
   align-items: center;
   padding: 12px 12px; /* Padding inside each item */
-  text-decoration: none;
-  color: #262626;
+  text-decoration: none;  color: var(--secondary);
+  background-color: var(--background);
   font-size: 1.1em;
   font-weight: 500;
   border-radius: 8px; /* Slightly rounded corners for hover */
@@ -92,7 +92,7 @@
 }
 
 .sidebar-item-link:hover {
-  background-color: #f0f0f0; /* Light background on hover */
+  background-color: var(--primary); /* Light background on hover */
   transform: translateX(4px); /* Subtle slide effect */
 }
 

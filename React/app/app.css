@@ -26,3 +26,11 @@ main {
   display: flex;
   justify-content: center; /* Centers the feed within the main area */
 }
+
+:root {
+  --primary: #4F3E8C;
+  --secondary: #9177F2;
+  --background: #221E40;
+  --dark: #161426;
+  --altcolor: #46A66F;
+}

@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center; /* Center posts horizontally */
   padding: 20px;
-  background-color: #fafafa; /* Light grey background like Instagram */
+  background-color: var(--dark); /* Light grey background like Instagram */
   min-height: 100vh; /* Ensure it takes full viewport height */
   box-sizing: border-box;
   overflow-y: auto; /* Enable vertical scrolling */
