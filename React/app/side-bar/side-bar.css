@@ -1,0 +1,109 @@
+
+/* src/components/Sidebar.css */
+
+.instagram-sidebar {
+  width: 240px; /* Standard desktop sidebar width */
+  height: 100vh; /* Takes full viewport height */
+  position: fixed; /* Stays fixed on the left */
+  top: 0;
+  left: 0;
+  background-color: white;
+  border-right: 1px solid #dbdbdb;
+  padding: 12px 12px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box; /* Include padding/border in width */
+  z-index: 100; /* Ensure it stays on top of other content */
+}
+
+/* For smaller screens, you might collapse it */
+@media (max-width: 768px) {
+  .instagram-sidebar {
+    width: 72px; /* Collapsed width */
+    align-items: center; /* Center items when text is hidden */
+  }
+
+  .sidebar-logo .logo-text,
+  .sidebar-item-text {
+    display: none; /* Hide text on collapsed sidebar */
+  }
+
+  .sidebar-item-link {
+    justify-content: center; /* Center icon */
+    padding: 12px; /* Adjust padding for icon-only display */
+  }
+  .sidebar-item-icon {
+    margin-right: 0; /* Remove margin when text is hidden */
+  }
+}
+
+
+.sidebar-logo {
+  padding: 25px 12px 25px 12px; /* Top padding for logo */
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.sidebar-logo .logo-link {
+  text-decoration: none;
+  color: #262626;
+  font-size: 1.4em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  font-size: 1.8em; /* Adjust icon size */
+  margin-right: 10px; /* Space between icon and text */
+}
+
+
+.sidebar-nav {
+  flex-grow: 1; /* Allows navigation to take up available space */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-nav li,
+.sidebar-more {
+  margin-bottom: 5px; /* Space between items */
+}
+
+.sidebar-item-link {
+  display: flex;
+  align-items: center;
+  padding: 12px 12px; /* Padding inside each item */
+  text-decoration: none;
+  color: #262626;
+  font-size: 1.1em;
+  font-weight: 500;
+  border-radius: 8px; /* Slightly rounded corners for hover */
+  transition: background-color 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.sidebar-item-link:hover {
+  background-color: #f0f0f0; /* Light background on hover */
+  transform: translateX(4px); /* Subtle slide effect */
+}
+
+.sidebar-item-icon {
+  font-size: 1.5em; /* Icon size */
+  margin-right: 15px; /* Space between icon and text */
+  display: inline-flex; /* Ensure vertical alignment */
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-more {
+  margin-top: auto; /* Pushes "More" to the bottom */
+}

@@ -1,0 +1,96 @@
+/* src/components/FeedPost.css */
+
+.feed-post {
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px; /* Instagram posts are typically not full-width on desktop */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  box-sizing: border-box; /* Include padding/border in element's total width/height */
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  padding: 14px 16px;
+  border-bottom: 1px solid #efefef;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 12px;
+  object-fit: cover;
+  border: 1px solid #efefef; /* Subtle border */
+}
+
+.username {
+  font-weight: 600;
+  color: #262626;
+  font-size: 0.9em;
+}
+
+.post-image-container {
+  width: 100%;
+  /* Ensures image takes full width, aspect ratio handled by image itself */
+}
+
+.post-image {
+  width: 100%;
+  display: block; /* Remove extra space below image */
+  object-fit: cover; /* Ensures image covers the container without distortion */
+  max-height: 700px; /* Prevent excessively tall images */
+}
+
+.post-actions {
+  padding: 10px 16px;
+  display: flex;
+  gap: 15px; /* Space between action buttons */
+}
+
+.action-button {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #262626;
+  padding: 0;
+  margin: 0;
+  transition: transform 0.1s ease-in-out;
+}
+
+.action-button:hover {
+  transform: scale(1.1);
+}
+
+.post-details {
+  padding: 0 16px 14px;
+  font-size: 0.9em;
+}
+
+.likes {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #262626;
+}
+
+.description {
+  margin-bottom: 5px;
+  line-height: 1.4;
+}
+
+.description .username {
+  margin-right: 5px;
+}
+
+.comments {
+  color: #8e8e8e;
+  cursor: pointer;
+}
+
+.comments:hover {
+  text-decoration: underline;
+}

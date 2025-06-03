@@ -1,0 +1,28 @@
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa; /* Matches feed background */
+  color: #333;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.app-header {
+  /* Styles defined inline in App.js for simplicity */
+}
+
+main {
+  flex-grow: 1; /* Allows main content to take available space */
+  display: flex;
+  justify-content: center; /* Centers the feed within the main area */
+}
